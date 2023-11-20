@@ -52,6 +52,13 @@ int main()
 
     int resultado = validarPlaca(placa);
 
+    if (!resultado && !valido)
+    {
+        printf("Placa invalida\n");
+        printf("Dia da semana invalido\n");
+        return 0;
+    }
+
     if (!resultado)
     {
         printf("Placa invalida\n");
@@ -102,3 +109,4 @@ int main()
 }
     return 0;
 }
+//CORRETO
